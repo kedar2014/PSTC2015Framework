@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test Suite" verbose="6">
+	<parameter name="browserName" value="chrome" />
+	<parameter name="browserVersion" value="" />
+	<parameter name="platform" value="windows" />
+	<test name="Test1">
+		<method-selectors>
+			<method-selector>
+				<script language="beanshell"><![CDATA[ 
+         groups.containsKey("Regression") 
+       ]]></script>
+			</method-selector>
+		</method-selectors>
+		<packages>
+			<package name="com.pstc.*"></package>
+		</packages>
+	</test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

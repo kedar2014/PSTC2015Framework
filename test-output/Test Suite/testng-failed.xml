@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="6" name="Failed suite [Test Suite]">
+  <parameter name="platform" value="windows"/>
+  <parameter name="browserVersion" value=""/>
+  <parameter name="browserName" value="chrome"/>
+  <test name="Test1(failed)">
+    <method-selectors>
+      <method-selector>
+        <script language="BeanShell">
+          <![CDATA[ 
+         groups.containsKey("Regression") 
+       ]]>
+        </script>
+      </method-selector>
+    </method-selectors>
+    <classes>
+      <class name="com.pstc.framework.FrameworkSetupSuiteLevel">
+        <methods>
+          <include name="BeforeSuite"/>
+          <include name="AfterSuite"/>
+        </methods>
+      </class> <!-- com.pstc.framework.FrameworkSetupSuiteLevel -->
+      <class name="com.pstc.project.tests.TrialClass">
+        <methods>
+          <include name="TrialClass1"/>
+          <include name="testExecution" invocation-numbers="3 0 2 1"/>
+        </methods>
+      </class> <!-- com.pstc.project.tests.TrialClass -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Test Suite] -->
