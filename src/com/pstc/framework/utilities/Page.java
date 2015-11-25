@@ -31,14 +31,14 @@ public abstract class Page {
 	protected String masterEntityPassword = "auto01";
 	protected String scenarioID;
 
-	public Page(WebDriver driver, String pageName, Logger logger, String scenarioID) {
+	public Page(WebDriver driver, String pageName, Logger logger) {
 
 		this.driver = driver;
 		this.pageName = pageName;
 		webDriverWrapper = new WebDriverWrapper(driver);
 		frameworkServices = new FrameworkServices();
 		this.logger = logger;
-		this.scenarioID=scenarioID;
+		//this.scenarioID=scenarioID;
 	}
 
 	public Page() {
@@ -170,7 +170,6 @@ public abstract class Page {
 
 	protected void sendKeys(PageElement pageElement, String value) {
 		try {
-			waitForLoaderInvisibility();
 			value = (value == null) ? "" : value;
 			if (!isWebElementAvailableInPageElement(pageElement))
 				getWebElement(pageElement).sendKeys(value);
@@ -189,7 +188,6 @@ public abstract class Page {
 
 	protected void sendKeys(PageElement pageElement, Keys key) {
 		try {
-			waitForLoaderInvisibility();
 			if (!isWebElementAvailableInPageElement(pageElement))
 				getWebElement(pageElement).sendKeys(key);
 			else
@@ -208,7 +206,7 @@ public abstract class Page {
 	protected void clearAndSendKeys(PageElement pageElement, String value) {
 
 		try {
-			waitForLoaderInvisibility();
+			
 			value = (value == null) ? "" : value;
 			WebElement element;
 
@@ -260,7 +258,7 @@ public abstract class Page {
 
 	protected void click(PageElement pageElement) {
 		try {
-			waitForLoaderInvisibility();
+			
 			pageElement.setWebElement(getWebElement(pageElement));
 
 			WebElement element;
@@ -288,7 +286,7 @@ public abstract class Page {
 			frameworkServices.logMessage(
 					"Clicked on: " + pageElement.getName(), logger);
 		} catch (Exception exception) {
-			frameworkServices.takeScreenshot(scenarioID,driver, exception, logger);
+			//frameworkServices.takeScreenshot(scenarioID,driver, exception, logger);
 			throw new UnsuccessfulServiceException("Failed to click on : '"
 					+ pageElement.getName() + "' on : '" + pageName + "' ",
 					exception);
@@ -299,7 +297,7 @@ public abstract class Page {
 
 	protected void clickAndRetry(PageElement pageElement) {
 		try {
-			waitForLoaderInvisibility();
+			
 			WebDriverWait wait = new WebDriverWait(driver, 5);
 			wait.until(ExpectedConditions.elementToBeClickable(pageElement
 					.getBy()));
@@ -325,7 +323,7 @@ public abstract class Page {
 
 	protected void clickWithoutBringInView(PageElement pageElement) {
 		try {
-			waitForLoaderInvisibility();
+			
 			pageElement.setWebElement(getWebElement(pageElement));
 			WebElement element;
 
@@ -348,7 +346,7 @@ public abstract class Page {
 
 	protected void check(PageElement pageElement) {
 		try {
-			waitForLoaderInvisibility();
+			
 			WebElement webElement;
 			if (!isWebElementAvailableInPageElement(pageElement))
 				webElement = getWebElement(pageElement);
@@ -369,7 +367,7 @@ public abstract class Page {
 
 	protected void checkOrUncheck(String config, PageElement pageElement) {
 		try {
-			waitForLoaderInvisibility();
+			
 			WebElement webElement;
 			if (!isWebElementAvailableInPageElement(pageElement))
 				webElement = getWebElement(pageElement);
@@ -394,7 +392,7 @@ public abstract class Page {
 
 	protected void checkOrUncheckAndRetry(String config, PageElement pageElement) {
 		try {
-			waitForLoaderInvisibility();
+			
 			WebElement webElement;
 			if (!isWebElementAvailableInPageElement(pageElement))
 				webElement = getWebElement(pageElement);
@@ -433,7 +431,7 @@ public abstract class Page {
 
 	protected void checkAndRetry(PageElement pageElement) {
 		try {
-			waitForLoaderInvisibility();
+			
 			WebElement webElement;
 			if (!isWebElementAvailableInPageElement(pageElement))
 				webElement = getWebElement(pageElement);
@@ -458,7 +456,7 @@ public abstract class Page {
 
 	protected void unCheck(PageElement pageElement) {
 		try {
-			waitForLoaderInvisibility();
+			
 			WebElement webElement;
 			if (!isWebElementAvailableInPageElement(pageElement))
 				webElement = getWebElement(pageElement);
@@ -670,7 +668,7 @@ public abstract class Page {
 
 	protected void selectValueFromList(PageElement pageElement, String value) {
 		try {
-			waitForLoaderInvisibility();
+			
 
 			WebElement webElement;
 			if (!isWebElementAvailableInPageElement(pageElement))
@@ -698,7 +696,7 @@ public abstract class Page {
 	protected void selectValueFromListAndRetry(PageElement pageElement,
 			String value) {
 		try {
-			waitForLoaderInvisibility();
+			
 			WebElement webElement;
 			if (!isWebElementAvailableInPageElement(pageElement))
 				webElement = getWebElement(pageElement);
@@ -734,7 +732,7 @@ public abstract class Page {
 	protected void selectDateAndRetry(PageElement pageElement, String value) {
 		String date = "";
 		try {
-			waitForLoaderInvisibility();
+			
 			value = (value == null) ? "" : value;
 			WebElement element;
 			date = RandomCodeGenerator.dateGenerator(value, "dd-MMM-yyyy");
@@ -777,8 +775,8 @@ public abstract class Page {
 			PageElement pageElement, String value) {
 		String date = "";
 		try {
-			waitForLoaderInvisibility();
-			CalendarComponent calendarComponent = new CalendarComponent(driver,scenarioID);
+			
+			CalendarComponent calendarComponent = new CalendarComponent(driver);
 			for (int i = 0; i <= 2; i++) {
 				try {
 					date = RandomCodeGenerator.dateGenerator(value);
@@ -806,8 +804,8 @@ public abstract class Page {
 		String date = "";
 		try {
 			Thread.sleep(3000);
-			waitForLoaderInvisibility();
-			CalendarComponent calendarComponent = new CalendarComponent(driver,scenarioID);
+			
+			CalendarComponent calendarComponent = new CalendarComponent(driver);
 			for (int i = 0; i <= 2; i++) {
 				try {
 					date = RandomCodeGenerator.dateGenerator(value);

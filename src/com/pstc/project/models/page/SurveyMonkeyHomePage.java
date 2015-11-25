@@ -12,15 +12,15 @@ public class SurveyMonkeyHomePage extends Page {
 	static Logger logger = Logger.getLogger(SurveyMonkeyHomePage.class
 			.getName());
 
-	public SurveyMonkeyHomePage(WebDriver driver,String scenarioID) {
-		super(driver, SurveyMonkeyHomePage.class.getSimpleName(), logger, scenarioID);
+	public SurveyMonkeyHomePage(WebDriver driver) {
+		super(driver, SurveyMonkeyHomePage.class.getSimpleName(), logger);
 
 	}
 
-	public static SurveyMonkeyHomePage getHomePageInstance(WebDriver driver, String scenarioID)
+	public static SurveyMonkeyHomePage getHomePageInstance(WebDriver driver)
 			throws Throwable {
 		SurveyMonkeyHomePage surveyMonkeyHomePage = new SurveyMonkeyHomePage(
-				driver,scenarioID);
+				driver);
 		surveyMonkeyHomePage.waitForHomePageToLoad();
 		return surveyMonkeyHomePage;
 

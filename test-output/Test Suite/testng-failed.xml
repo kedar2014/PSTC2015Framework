@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite verbose="6" name="Failed suite [Test Suite]">
+<suite verbose="4" name="Failed suite [Test Suite]">
   <parameter name="platform" value="windows"/>
   <parameter name="browserVersion" value=""/>
   <parameter name="browserName" value="chrome"/>
@@ -15,16 +15,12 @@
       </method-selector>
     </method-selectors>
     <classes>
-      <class name="com.pstc.framework.FrameworkSetupSuiteLevel">
+      <class name="com.pstc.project.tests.TrialClass">
         <methods>
           <include name="BeforeSuite"/>
           <include name="AfterSuite"/>
-        </methods>
-      </class> <!-- com.pstc.framework.FrameworkSetupSuiteLevel -->
-      <class name="com.pstc.project.tests.TrialClass">
-        <methods>
           <include name="TrialClass1"/>
-          <include name="testExecution" invocation-numbers="1 2 3 0"/>
+          <include name="testExecution" invocation-numbers="1 0 2 3"/>
         </methods>
       </class> <!-- com.pstc.project.tests.TrialClass -->
     </classes>

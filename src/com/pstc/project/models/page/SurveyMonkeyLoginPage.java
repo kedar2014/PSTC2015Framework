@@ -16,15 +16,15 @@ public class SurveyMonkeyLoginPage extends Page {
 			.getName());
 	Login loginData;
 
-	public SurveyMonkeyLoginPage(WebDriver driver, TestMap testMap,String scenarioID) {
-		super(driver, SurveyMonkeyLoginPage.class.getSimpleName(), logger,scenarioID);
+	public SurveyMonkeyLoginPage(WebDriver driver, TestMap testMap) {
+		super(driver, SurveyMonkeyLoginPage.class.getSimpleName(), logger);
 		loginData = getLoginData(testMap);
 	}
 
 	public static SurveyMonkeyLoginPage getLoginPageInstance(WebDriver driver,
-			TestMap testMap, String scenarioID) throws Throwable {
+			TestMap testMap) throws Throwable {
 		SurveyMonkeyLoginPage surveyMonkeyLoginPage = new SurveyMonkeyLoginPage(
-				driver, testMap,scenarioID);
+				driver, testMap);
 		surveyMonkeyLoginPage.waitForLoginPageToLoad();
 		return surveyMonkeyLoginPage;
 

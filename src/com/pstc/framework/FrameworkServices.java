@@ -147,9 +147,9 @@ public class FrameworkServices {
 			Reporter.log("Unable to launch browser instance due to following error : "
 					+ err.getMessage());
 		}
-		((RemoteWebDriver) driver).setFileDetector(new LocalFileDetector());
+		//((RemoteWebDriver) driver).setFileDetector(new LocalFileDetector());
 		driver.manage().window().maximize();
-		videoServiceStart(driver);
+		//videoServiceStart(driver);
 		driver.manage().deleteAllCookies();
 		return driver;
 
