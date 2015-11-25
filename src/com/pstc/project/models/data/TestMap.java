@@ -14,10 +14,15 @@ public class TestMap implements Serializable {
 	@Id
 	@Column(name = "ScenarioName")
 	private String scenarioName;
-	@Column(name = "Page_Home")
-	private String page_Home;
-	@Column(name = "Page_Login")
-	private String page_Login;
+	
+	@Column(name = "AmazonLoginPage")
+	private String amazonLoginPage;
+	@Column(name = "GmailLoginPage")
+	private String gmailLoginPage;
+	@Column(name = "GmailLandingPage")
+	private String gmailLandingPage;
+			
+
 
 	public String getScenarioName() {
 		return scenarioName;
@@ -27,20 +32,29 @@ public class TestMap implements Serializable {
 		this.scenarioName = scenarioName;
 	}
 
-	public String getPage_Home() {
-		return page_Home;
+	public String getAmazonLoginPage() {
+		return amazonLoginPage;
 	}
 
-	public void setPage_Home(String page_Home) {
-		this.page_Home = page_Home;
+	public void setAmazonLoginPage(String amazonLoginPage) {
+		this.amazonLoginPage = amazonLoginPage;
 	}
 
-	public String getPage_Login() {
-		return page_Login;
+	public String getGmailLoginPage() {
+		return gmailLoginPage;
 	}
 
-	public void setPage_Login(String page_Login) {
-		this.page_Login = page_Login;
+	public void setGmailLoginPage(String gmailLoginPage) {
+		this.gmailLoginPage = gmailLoginPage;
 	}
 
+	public String getGmailLandingPage() {
+		return gmailLandingPage;
+	}
+
+	public void setGmailLandingPage(String gmailLandingPage) {
+		this.gmailLandingPage = gmailLandingPage;
+	}
+
+	
 }

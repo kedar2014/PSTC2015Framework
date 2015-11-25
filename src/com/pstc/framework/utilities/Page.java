@@ -1,6 +1,7 @@
 package com.pstc.framework.utilities;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Set;
 
 import org.apache.log4j.Logger;
@@ -16,7 +17,6 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import com.pstc.framework.ConfigurationProperties;
 import com.pstc.framework.FrameworkServices;
 import com.pstc.framework.exception.ElementNotDisappearedInSpecifiedTimeException;
 import com.pstc.framework.exception.ElementNotLoadedInSpecifiedTimeException;
@@ -295,6 +295,15 @@ public abstract class Page {
 		}
 	}
 
+protected List<WebElement> getWebElements(By by,WebDriver driver){
+	
+	
+	return driver.findElements(by);
+	
+	
+}
+	
+	
 	protected void clickAndRetry(PageElement pageElement) {
 		try {
 			

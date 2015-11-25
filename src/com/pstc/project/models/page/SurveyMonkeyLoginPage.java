@@ -18,7 +18,7 @@ public class SurveyMonkeyLoginPage extends Page {
 
 	public SurveyMonkeyLoginPage(WebDriver driver, TestMap testMap) {
 		super(driver, SurveyMonkeyLoginPage.class.getSimpleName(), logger);
-		loginData = getLoginData(testMap);
+		//loginData = getLoginData(testMap);
 	}
 
 	public static SurveyMonkeyLoginPage getLoginPageInstance(WebDriver driver,
@@ -64,10 +64,10 @@ public class SurveyMonkeyLoginPage extends Page {
 		return isElementDisplayed(surveyMonkeyLoginPageTitle());
 	}
 
-	private Login getLoginData(TestMap testMap) {
+	/*private Login getLoginData(TestMap testMap) {
 		FrameworkServices frameworkServices = new FrameworkServices();
 		return (Login) frameworkServices.getPageDataByTestMapCode(
 				testMap.getPage_Login(), Login.class);
 	}
-
+*/
 }

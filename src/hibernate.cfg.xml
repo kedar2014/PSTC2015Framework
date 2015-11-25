@@ -15,7 +15,7 @@
 		<property name="hibernate.show_sql">true</property>
 
 		<mapping class="com.pstc.project.models.data.TestMap" />
-		<mapping class="com.pstc.project.models.data.Home" />
-		<mapping class="com.pstc.project.models.data.Login" />
+		<mapping class="com.pstc.project.models.data.GmailLandingPageData" />
+		<mapping class="com.pstc.project.models.data.GmailLoginPageData" />
 	</session-factory>
 </hibernate-configuration>

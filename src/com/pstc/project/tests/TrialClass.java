@@ -15,6 +15,9 @@ import com.pstc.framework.FrameworkServices;
 import com.pstc.framework.FrameworkSetupSuiteLevel;
 import com.pstc.framework.utilities.AssertClass;
 import com.pstc.project.models.data.TestMap;
+import com.pstc.project.models.page.GmailHomePage;
+import com.pstc.project.models.page.GmailInboxPage;
+import com.pstc.project.models.page.GmailLoginPage;
 import com.pstc.project.models.page.SurveyMonkeyHomePage;
 import com.pstc.project.models.page.SurveyMonkeyLoggedInPage;
 import com.pstc.project.models.page.SurveyMonkeyLoginPage;
@@ -36,13 +39,13 @@ public class TrialClass extends FrameworkSetupSuiteLevel {
 		env.setPlatform(platform);
 	}
 
-	@DataProvider(name = "SurveyMonkey_DP", parallel = true)
+	@DataProvider(name = "GmailSubjectSearch_DP", parallel = true)
 	public Iterator<Object> loginGmail_DP() {
-		return frameworkServices.getTestDataMap("LoginSurveyMonkey");
+		return frameworkServices.getTestDataMap("GmailSubjectSearch");
 	}
 
-	@Test(testName = "LoginSurveyMonkey", groups = { "Regression",
-			"LoginSurveyMonkey" }, dataProvider = "SurveyMonkey_DP")
+	@Test(testName = "GmailSubjectSearch", groups = { "Regression",
+			"LoginSurveyMonkey" }, dataProvider = "GmailSubjectSearch_DP")
 	public void testExecution(TestMap testMap) throws Throwable {
 		WebDriver driver=null;
 		try {
@@ -54,26 +57,22 @@ public class TrialClass extends FrameworkSetupSuiteLevel {
 					.testName();
 			AssertClass assertClass = new AssertClass(driver, scriptID,
 					testMap.getScenarioName());
-			driver.get(configurationProperties
-					.getProperty(ConfigurationProperties.APPLICATION_URL));
+			driver.get("http://mail.google.com");
 
-			SurveyMonkeyHomePage surveyMonkeyHomePage = SurveyMonkeyHomePage
-					.getHomePageInstance(driver);
-			surveyMonkeyHomePage.signInToSurveyMonkey();
-
-			SurveyMonkeyLoginPage surveyMonkeyLoginPage = SurveyMonkeyLoginPage
-					.getLoginPageInstance(driver, testMap);
-			assertClass.verifyValues("1", true, surveyMonkeyLoginPage
-					.verifySurveyMonkeyLoginPageTitleExists(),
-					"Verify Login Page title exists");
-			surveyMonkeyLoginPage.loginToSurveyMonkey();
-
-			SurveyMonkeyLoggedInPage surveyMonkeyLoggedInPage = SurveyMonkeyLoggedInPage
-					.getLoggedInPageInstance(driver);
-			assertClass.verifyValues("2", true, surveyMonkeyLoggedInPage
-					.verifySurveyMonkeyLoggedInPageUserNameExists(),
+			
+			GmailHomePage gmailHomePage = GmailHomePage.getGmailHomePageInstance(driver);
+			
+			gmailHomePage.signInToGmail();
+			
+			GmailLoginPage gmailLoginPage = GmailLoginPage.getGmailLoginPageInstance(driver, testMap);
+			gmailLoginPage.signInToGmail();
+			
+			GmailInboxPage gmailInboxPage = GmailInboxPage.getInboxPageInstance(driver,testMap);
+			
+			gmailInboxPage.enterSearchValue();
+			assertClass.verifyValues("2", gmailInboxPage.getGmailInboxData().getCountToVerify(), gmailInboxPage.getListOfAllSubjects().size(),
 					"Verify Username exists");
-			// FrameworkServices.videoServiceStop(driver);
+			// FrameworkServices.videoServiceStop(drgmiver);
 		} catch (AssertionError assertionError) {
 			// if (FrameworkSetupSuiteLevel.screenshot_flag.equals("true")) {
 			frameworkServices.takeScreenshot(testMap.getScenarioName(), driver,

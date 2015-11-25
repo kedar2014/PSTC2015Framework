@@ -15,12 +15,16 @@
       </method-selector>
     </method-selectors>
     <classes>
-      <class name="com.pstc.project.tests.TrialClass">
+      <class name="com.pstc.framework.FrameworkSetupSuiteLevel">
         <methods>
           <include name="BeforeSuite"/>
           <include name="AfterSuite"/>
+        </methods>
+      </class> <!-- com.pstc.framework.FrameworkSetupSuiteLevel -->
+      <class name="com.pstc.project.tests.TrialClass">
+        <methods>
           <include name="TrialClass1"/>
-          <include name="testExecution" invocation-numbers="3 1 0 2"/>
+          <include name="testExecution" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.pstc.project.tests.TrialClass -->
     </classes>
