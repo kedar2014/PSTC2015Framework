@@ -8,73 +8,69 @@
       <![CDATA[Before Suite Execution Finish]]>
     </line>
     <line>
-      <![CDATA[Wed Nov 25 11:52:56 IST 2015]]>
+      <![CDATA[Wed Nov 25 12:25:33 IST 2015]]>
     </line>
     <line>
-      <![CDATA[<br> <B>LoginSurveyMonkey_2] --- FAILED<br> Failed to click on : 'Sign In button on Survey monkey home page' on : 'SurveyMonkeyHomePage'  kindly refer attached screenshot for more clearification 
-
- Stacke Trace::
-<B>]]>
+      <![CDATA[Wed Nov 25 12:25:34 IST 2015]]>
     </line>
     <line>
-      <![CDATA[<br> <a href="D:\ExecutionLog\2015_11_25_11_52\FlowID - LoginSurveyMonkey_2.png"><img src="D:\ExecutionLog\2015_11_25_11_52\FlowID - LoginSurveyMonkey_2.png" alt="ScreenShot Not Available" height="400" width="400"> </a>]]>
+      <![CDATA[Wed Nov 25 12:25:34 IST 2015]]>
     </line>
     <line>
-      <![CDATA[<br> <B> Execution End Time : 2015-11-25 11:57:47.921<B>]]>
+      <![CDATA[Wed Nov 25 12:25:35 IST 2015]]>
     </line>
     <line>
-      <![CDATA[Wed Nov 25 11:57:48 IST 2015]]>
+      <![CDATA[<br> <B>LoginSurveyMonkey_2 --- FAILED<br> Element Survey monkey home page Title was not loaded in specified timeout of 15 seconds kindly refer attached screenshot for more clearification<B>]]>
     </line>
     <line>
-      <![CDATA[Wed Nov 25 11:57:49 IST 2015]]>
+      <![CDATA[<br> <B>LoginSurveyMonkey_4 --- FAILED<br> Element Survey monkey home page Title was not loaded in specified timeout of 15 seconds kindly refer attached screenshot for more clearification<B>]]>
     </line>
     <line>
-      <![CDATA[Wed Nov 25 11:57:50 IST 2015]]>
+      <![CDATA[<br> <a href="D:\ExecutionLog\2015_11_25_12_25\FlowID - LoginSurveyMonkey_4.png"><img src="D:\ExecutionLog\2015_11_25_12_25\FlowID - LoginSurveyMonkey_4.png" alt="ScreenShot Not Available" height="400" width="400"> </a>]]>
     </line>
     <line>
-      <![CDATA[<br> <B>LoginSurveyMonkey_1] --- FAILED<br> Session ID is null. Using WebDriver after calling quit()?
-Build info: version: '2.48.2', revision: '41bccdd10cf2c0560f637404c2d96164b67d9d67', time: '2015-10-09 13:08:06'
-System info: host: 'D1ML14605', ip: '192.168.8.101', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_45'
-Driver info: driver.version: RemoteWebDriver<B>]]>
+      <![CDATA[<br> <B> Execution End Time : 2015-11-25 12:26:56.047<B>]]>
     </line>
     <line>
-      <![CDATA[<br> <B>LoginSurveyMonkey_3] --- FAILED<br> Session ID is null. Using WebDriver after calling quit()?
-Build info: version: '2.48.2', revision: '41bccdd', time: '2015-10-09 19:59:12'
-System info: host: 'D1ML14617', ip: '192.168.8.102', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_45'
-Driver info: driver.version: EventFiringWebDriver
-Command duration or timeout: 2.02 seconds
-Build info: version: '2.48.2', revision: '41bccdd10cf2c0560f637404c2d96164b67d9d67', time: '2015-10-09 13:08:06'
-System info: host: 'D1ML14605', ip: '192.168.8.101', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_45'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\m1022828\AppData\Local\Temp\scoped_dir4320_3234}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, webdriver.remote.sessionid=b4a613cc-6b2b-4ac4-ad82-07e5b70c80ef, version=46.0.2490.86, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, hasTouchScreen=false, applicationCacheEnabled=false, takesScreenshot=true}]<B>]]>
+      <![CDATA[<br> <a href="D:\ExecutionLog\2015_11_25_12_25\FlowID - LoginSurveyMonkey_2.png"><img src="D:\ExecutionLog\2015_11_25_12_25\FlowID - LoginSurveyMonkey_2.png" alt="ScreenShot Not Available" height="400" width="400"> </a>]]>
     </line>
     <line>
-      <![CDATA[<br> <B>LoginSurveyMonkey_4] --- FAILED<br> Session ID is null. Using WebDriver after calling quit()?
-Build info: version: '2.48.2', revision: '41bccdd', time: '2015-10-09 19:59:12'
-System info: host: 'D1ML14617', ip: '192.168.8.102', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_45'
-Driver info: driver.version: EventFiringWebDriver
-Command duration or timeout: 1.33 seconds
-Build info: version: '2.48.2', revision: '41bccdd10cf2c0560f637404c2d96164b67d9d67', time: '2015-10-09 13:08:06'
-System info: host: 'D1ML14605', ip: '192.168.8.101', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_45'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\m1022828\AppData\Local\Temp\scoped_dir4320_3234}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, webdriver.remote.sessionid=b4a613cc-6b2b-4ac4-ad82-07e5b70c80ef, version=46.0.2490.86, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, hasTouchScreen=false, applicationCacheEnabled=false, takesScreenshot=true}]<B>]]>
+      <![CDATA[<br> <B> Execution End Time : 2015-11-25 12:26:56.047<B>]]>
+    </line>
+    <line>
+      <![CDATA[<br> <B>LoginSurveyMonkey_1 --- FAILED<br> Element Survey monkey home page Title was not loaded in specified timeout of 15 seconds kindly refer attached screenshot for more clearification<B>]]>
+    </line>
+    <line>
+      <![CDATA[<br> <B>LoginSurveyMonkey_3 --- FAILED<br> Element Survey monkey home page Title was not loaded in specified timeout of 15 seconds kindly refer attached screenshot for more clearification<B>]]>
+    </line>
+    <line>
+      <![CDATA[<br> <a href="D:\ExecutionLog\2015_11_25_12_25\FlowID - LoginSurveyMonkey_1.png"><img src="D:\ExecutionLog\2015_11_25_12_25\FlowID - LoginSurveyMonkey_1.png" alt="ScreenShot Not Available" height="400" width="400"> </a>]]>
+    </line>
+    <line>
+      <![CDATA[<br> <B> Execution End Time : 2015-11-25 12:27:01.953<B>]]>
+    </line>
+    <line>
+      <![CDATA[<br> <a href="D:\ExecutionLog\2015_11_25_12_25\FlowID - LoginSurveyMonkey_3.png"><img src="D:\ExecutionLog\2015_11_25_12_25\FlowID - LoginSurveyMonkey_3.png" alt="ScreenShot Not Available" height="400" width="400"> </a>]]>
+    </line>
+    <line>
+      <![CDATA[<br> <B> Execution End Time : 2015-11-25 12:27:02.969<B>]]>
     </line>
     <line>
       <![CDATA[After Suite Execution Finish]]>
     </line>
   </reporter-output>
-  <suite name="Test Suite" duration-ms="303457" started-at="2015-11-25T06:22:47Z" finished-at="2015-11-25T06:27:51Z">
+  <suite name="Test Suite" duration-ms="110027" started-at="2015-11-25T06:55:14Z" finished-at="2015-11-25T06:57:04Z">
     <groups>
       <group name="Regression">
-        <method signature="TrialClass.testExecution(com.pstc.project.models.data.TestMap)[pri:0, instance:com.pstc.project.tests.TrialClass@1e26fc47]" name="testExecution" class="com.pstc.project.tests.TrialClass"/>
+        <method signature="TrialClass.testExecution(com.pstc.project.models.data.TestMap)[pri:0, instance:com.pstc.project.tests.TrialClass@6f8daedc]" name="testExecution" class="com.pstc.project.tests.TrialClass"/>
       </group> <!-- Regression -->
       <group name="LoginSurveyMonkey">
-        <method signature="TrialClass.testExecution(com.pstc.project.models.data.TestMap)[pri:0, instance:com.pstc.project.tests.TrialClass@1e26fc47]" name="testExecution" class="com.pstc.project.tests.TrialClass"/>
+        <method signature="TrialClass.testExecution(com.pstc.project.models.data.TestMap)[pri:0, instance:com.pstc.project.tests.TrialClass@6f8daedc]" name="testExecution" class="com.pstc.project.tests.TrialClass"/>
       </group> <!-- LoginSurveyMonkey -->
     </groups>
-    <test name="Test1" duration-ms="303457" started-at="2015-11-25T06:22:47Z" finished-at="2015-11-25T06:27:51Z">
+    <test name="Test1" duration-ms="110027" started-at="2015-11-25T06:55:14Z" finished-at="2015-11-25T06:57:04Z">
       <class name="com.pstc.project.tests.TrialClass">
-        <test-method status="PASS" signature="BeforeSuite()[pri:0, instance:com.pstc.project.tests.TrialClass@1e26fc47]" name="BeforeSuite" is-config="true" duration-ms="2321" started-at="2015-11-25T11:52:45Z" finished-at="2015-11-25T11:52:47Z">
+        <test-method status="PASS" signature="BeforeSuite()[pri:0, instance:com.pstc.project.tests.TrialClass@6f8daedc]" name="BeforeSuite" is-config="true" duration-ms="2443" started-at="2015-11-25T12:25:12Z" finished-at="2015-11-25T12:25:14Z">
           <reporter-output>
             <line>
               <![CDATA[App Link:-https://www.surveymonkey.com/]]>
@@ -84,7 +80,7 @@ Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, brows
             </line>
           </reporter-output>
         </test-method> <!-- BeforeSuite -->
-        <test-method status="PASS" signature="TrialClass1(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.pstc.project.tests.TrialClass@1e26fc47]" name="TrialClass1" is-config="true" duration-ms="0" started-at="2015-11-25T11:52:47Z" finished-at="2015-11-25T11:52:47Z">
+        <test-method status="PASS" signature="TrialClass1(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.pstc.project.tests.TrialClass@6f8daedc]" name="TrialClass1" is-config="true" duration-ms="0" started-at="2015-11-25T12:25:14Z" finished-at="2015-11-25T12:25:14Z">
           <params>
             <param index="0">
               <value>
@@ -105,112 +101,7 @@ Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, brows
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TrialClass1 -->
-        <test-method status="FAIL" signature="testExecution(com.pstc.project.models.data.TestMap)[pri:0, instance:com.pstc.project.tests.TrialClass@1e26fc47]" name="testExecution" duration-ms="303000" started-at="2015-11-25T11:52:48Z" data-provider="SurveyMonkey_DP" finished-at="2015-11-25T11:57:51Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[com.pstc.project.models.data.TestMap@2150730d]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[Session ID is null. Using WebDriver after calling quit()?
-Build info: version: '2.48.2', revision: '41bccdd', time: '2015-10-09 19:59:12'
-System info: host: 'D1ML14617', ip: '192.168.8.102', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_45'
-Driver info: driver.version: EventFiringWebDriver
-Command duration or timeout: 2.02 seconds
-Build info: version: '2.48.2', revision: '41bccdd10cf2c0560f637404c2d96164b67d9d67', time: '2015-10-09 13:08:06'
-System info: host: 'D1ML14605', ip: '192.168.8.101', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_45'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\m1022828\AppData\Local\Temp\scoped_dir4320_3234}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, webdriver.remote.sessionid=b4a613cc-6b2b-4ac4-ad82-07e5b70c80ef, version=46.0.2490.86, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, hasTouchScreen=false, applicationCacheEnabled=false, takesScreenshot=true}]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Session ID is null. Using WebDriver after calling quit()?
-Build info: version: '2.48.2', revision: '41bccdd', time: '2015-10-09 19:59:12'
-System info: host: 'D1ML14617', ip: '192.168.8.102', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_45'
-Driver info: driver.version: EventFiringWebDriver
-Command duration or timeout: 2.02 seconds
-Build info: version: '2.48.2', revision: '41bccdd10cf2c0560f637404c2d96164b67d9d67', time: '2015-10-09 13:08:06'
-System info: host: 'D1ML14605', ip: '192.168.8.101', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_45'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\m1022828\AppData\Local\Temp\scoped_dir4320_3234}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, webdriver.remote.sessionid=b4a613cc-6b2b-4ac4-ad82-07e5b70c80ef, version=46.0.2490.86, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, hasTouchScreen=false, applicationCacheEnabled=false, takesScreenshot=true}]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:647)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:311)
-	at com.pstc.project.tests.TrialClass.testExecution(TrialClass.java:56)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:73)
-	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
-	at java.lang.Thread.run(Thread.java:744)
-Caused by: org.openqa.selenium.remote.ScreenshotException: Screen shot has been taken
-Build info: version: '2.48.2', revision: '41bccdd10cf2c0560f637404c2d96164b67d9d67', time: '2015-10-09 13:08:06'
-System info: host: 'D1ML14605', ip: '192.168.8.101', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_45'
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:138)
-	... 18 more
-Caused by: org.openqa.selenium.remote.SessionNotFoundException: Session ID is null. Using WebDriver after calling quit()?
-Build info: version: '2.48.2', revision: '41bccdd', time: '2015-10-09 19:59:12'
-System info: host: 'D1ML14617', ip: '192.168.8.102', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_45'
-Driver info: driver.version: EventFiringWebDriver
-Build info: version: '2.48.2', revision: '41bccdd10cf2c0560f637404c2d96164b67d9d67', time: '2015-10-09 13:08:06'
-System info: host: 'D1ML14605', ip: '192.168.8.101', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_45'
-Driver info: driver.version: EventFiringWebDriver
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:134)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:620)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:311)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:102)
-	at com.sun.proxy.$Proxy1.get(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.get(EventFiringWebDriver.java:162)
-	at org.openqa.selenium.remote.server.handler.ChangeUrl.call(ChangeUrl.java:40)
-	at org.openqa.selenium.remote.server.handler.ChangeUrl.call(ChangeUrl.java:1)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:176)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
-          <reporter-output>
-            <line>
-              <![CDATA[Wed Nov 25 11:57:48 IST 2015]]>
-            </line>
-            <line>
-              <![CDATA[<br> <B>LoginSurveyMonkey_3] --- FAILED<br> Session ID is null. Using WebDriver after calling quit()?
-Build info: version: '2.48.2', revision: '41bccdd', time: '2015-10-09 19:59:12'
-System info: host: 'D1ML14617', ip: '192.168.8.102', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_45'
-Driver info: driver.version: EventFiringWebDriver
-Command duration or timeout: 2.02 seconds
-Build info: version: '2.48.2', revision: '41bccdd10cf2c0560f637404c2d96164b67d9d67', time: '2015-10-09 13:08:06'
-System info: host: 'D1ML14605', ip: '192.168.8.101', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_45'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\m1022828\AppData\Local\Temp\scoped_dir4320_3234}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, webdriver.remote.sessionid=b4a613cc-6b2b-4ac4-ad82-07e5b70c80ef, version=46.0.2490.86, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, hasTouchScreen=false, applicationCacheEnabled=false, takesScreenshot=true}]<B>]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- testExecution -->
-        <test-method status="FAIL" signature="testExecution(com.pstc.project.models.data.TestMap)[pri:0, instance:com.pstc.project.tests.TrialClass@1e26fc47]" name="testExecution" duration-ms="303156" started-at="2015-11-25T11:52:48Z" data-provider="SurveyMonkey_DP" finished-at="2015-11-25T11:57:51Z">
+        <test-method status="FAIL" signature="testExecution(com.pstc.project.models.data.TestMap)[pri:0, instance:com.pstc.project.tests.TrialClass@6f8daedc]" name="testExecution" duration-ms="106470" started-at="2015-11-25T12:25:14Z" data-provider="SurveyMonkey_DP" finished-at="2015-11-25T12:27:01Z">
           <params>
             <param index="0">
               <value>
@@ -220,187 +111,28 @@ Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, brows
           </params>
           <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[Session ID is null. Using WebDriver after calling quit()?
-Build info: version: '2.48.2', revision: '41bccdd', time: '2015-10-09 19:59:12'
-System info: host: 'D1ML14617', ip: '192.168.8.102', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_45'
-Driver info: driver.version: EventFiringWebDriver
-Command duration or timeout: 1.33 seconds
-Build info: version: '2.48.2', revision: '41bccdd10cf2c0560f637404c2d96164b67d9d67', time: '2015-10-09 13:08:06'
-System info: host: 'D1ML14605', ip: '192.168.8.101', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_45'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\m1022828\AppData\Local\Temp\scoped_dir4320_3234}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, webdriver.remote.sessionid=b4a613cc-6b2b-4ac4-ad82-07e5b70c80ef, version=46.0.2490.86, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, hasTouchScreen=false, applicationCacheEnabled=false, takesScreenshot=true}]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Session ID is null. Using WebDriver after calling quit()?
-Build info: version: '2.48.2', revision: '41bccdd', time: '2015-10-09 19:59:12'
-System info: host: 'D1ML14617', ip: '192.168.8.102', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_45'
-Driver info: driver.version: EventFiringWebDriver
-Command duration or timeout: 1.33 seconds
-Build info: version: '2.48.2', revision: '41bccdd10cf2c0560f637404c2d96164b67d9d67', time: '2015-10-09 13:08:06'
-System info: host: 'D1ML14605', ip: '192.168.8.101', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_45'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\m1022828\AppData\Local\Temp\scoped_dir4320_3234}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, webdriver.remote.sessionid=b4a613cc-6b2b-4ac4-ad82-07e5b70c80ef, version=46.0.2490.86, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, hasTouchScreen=false, applicationCacheEnabled=false, takesScreenshot=true}]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:647)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:311)
-	at com.pstc.project.tests.TrialClass.testExecution(TrialClass.java:56)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:73)
-	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
-	at java.lang.Thread.run(Thread.java:744)
-Caused by: org.openqa.selenium.remote.ScreenshotException: Screen shot has been taken
-Build info: version: '2.48.2', revision: '41bccdd10cf2c0560f637404c2d96164b67d9d67', time: '2015-10-09 13:08:06'
-System info: host: 'D1ML14605', ip: '192.168.8.101', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_45'
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:138)
-	... 18 more
-Caused by: org.openqa.selenium.remote.SessionNotFoundException: Session ID is null. Using WebDriver after calling quit()?
-Build info: version: '2.48.2', revision: '41bccdd', time: '2015-10-09 19:59:12'
-System info: host: 'D1ML14617', ip: '192.168.8.102', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_45'
-Driver info: driver.version: EventFiringWebDriver
-Build info: version: '2.48.2', revision: '41bccdd10cf2c0560f637404c2d96164b67d9d67', time: '2015-10-09 13:08:06'
-System info: host: 'D1ML14605', ip: '192.168.8.101', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_45'
-Driver info: driver.version: EventFiringWebDriver
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:134)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:620)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:311)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:102)
-	at com.sun.proxy.$Proxy1.get(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.get(EventFiringWebDriver.java:162)
-	at org.openqa.selenium.remote.server.handler.ChangeUrl.call(ChangeUrl.java:40)
-	at org.openqa.selenium.remote.server.handler.ChangeUrl.call(ChangeUrl.java:1)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:176)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
-          <reporter-output>
-            <line>
-              <![CDATA[Wed Nov 25 11:57:49 IST 2015]]>
-            </line>
-            <line>
-              <![CDATA[<br> <B>LoginSurveyMonkey_4] --- FAILED<br> Session ID is null. Using WebDriver after calling quit()?
-Build info: version: '2.48.2', revision: '41bccdd', time: '2015-10-09 19:59:12'
-System info: host: 'D1ML14617', ip: '192.168.8.102', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_45'
-Driver info: driver.version: EventFiringWebDriver
-Command duration or timeout: 1.33 seconds
-Build info: version: '2.48.2', revision: '41bccdd10cf2c0560f637404c2d96164b67d9d67', time: '2015-10-09 13:08:06'
-System info: host: 'D1ML14605', ip: '192.168.8.101', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_45'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\m1022828\AppData\Local\Temp\scoped_dir4320_3234}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, webdriver.remote.sessionid=b4a613cc-6b2b-4ac4-ad82-07e5b70c80ef, version=46.0.2490.86, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, hasTouchScreen=false, applicationCacheEnabled=false, takesScreenshot=true}]<B>]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- testExecution -->
-        <test-method status="FAIL" signature="testExecution(com.pstc.project.models.data.TestMap)[pri:0, instance:com.pstc.project.tests.TrialClass@1e26fc47]" name="testExecution" duration-ms="302828" started-at="2015-11-25T11:52:48Z" data-provider="SurveyMonkey_DP" finished-at="2015-11-25T11:57:50Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[com.pstc.project.models.data.TestMap@714550bb]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.remote.SessionNotFoundException">
-            <message>
-              <![CDATA[Session ID is null. Using WebDriver after calling quit()?
-Build info: version: '2.48.2', revision: '41bccdd10cf2c0560f637404c2d96164b67d9d67', time: '2015-10-09 13:08:06'
-System info: host: 'D1ML14605', ip: '192.168.8.101', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_45'
-Driver info: driver.version: RemoteWebDriver]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.remote.SessionNotFoundException: Session ID is null. Using WebDriver after calling quit()?
-Build info: version: '2.48.2', revision: '41bccdd10cf2c0560f637404c2d96164b67d9d67', time: '2015-10-09 13:08:06'
-System info: host: 'D1ML14605', ip: '192.168.8.101', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_45'
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:134)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:620)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:311)
-	at com.pstc.project.tests.TrialClass.testExecution(TrialClass.java:56)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:73)
-	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
-	at java.lang.Thread.run(Thread.java:744)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.remote.SessionNotFoundException -->
-          <reporter-output>
-            <line>
-              <![CDATA[Wed Nov 25 11:57:50 IST 2015]]>
-            </line>
-            <line>
-              <![CDATA[<br> <B>LoginSurveyMonkey_1] --- FAILED<br> Session ID is null. Using WebDriver after calling quit()?
-Build info: version: '2.48.2', revision: '41bccdd10cf2c0560f637404c2d96164b67d9d67', time: '2015-10-09 13:08:06'
-System info: host: 'D1ML14605', ip: '192.168.8.101', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_45'
-Driver info: driver.version: RemoteWebDriver<B>]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- testExecution -->
-        <test-method status="FAIL" signature="testExecution(com.pstc.project.models.data.TestMap)[pri:0, instance:com.pstc.project.tests.TrialClass@1e26fc47]" name="testExecution" duration-ms="302687" started-at="2015-11-25T11:52:48Z" data-provider="SurveyMonkey_DP" finished-at="2015-11-25T11:57:50Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[com.pstc.project.models.data.TestMap@4f6d8d30]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
               <![CDATA[Error communicating with the remote browser. It may have died.
 Build info: version: '2.48.2', revision: '41bccdd', time: '2015-10-09 19:59:12'
-System info: host: 'D1ML14617', ip: '192.168.8.102', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_45'
+System info: host: 'D1ML14617', ip: '192.168.8.101', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_45'
 Driver info: driver.version: EventFiringWebDriver
-Command duration or timeout: 2.78 seconds
+Command duration or timeout: 5.23 seconds
 Build info: version: '2.48.2', revision: '41bccdd10cf2c0560f637404c2d96164b67d9d67', time: '2015-10-09 13:08:06'
-System info: host: 'D1ML14605', ip: '192.168.8.101', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_45'
-Session ID: b4a613cc-6b2b-4ac4-ad82-07e5b70c80ef
+System info: host: 'D1ML14605', ip: '192.168.8.100', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_45'
+Session ID: ef56d938-15e0-4890-b319-fd32433066fa
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\m1022828\AppData\Local\Temp\scoped_dir4320_3234}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, webdriver.remote.sessionid=b4a613cc-6b2b-4ac4-ad82-07e5b70c80ef, version=46.0.2490.86, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, hasTouchScreen=false, applicationCacheEnabled=false, takesScreenshot=true}]]]>
+Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\m1022828\AppData\Local\Temp\scoped_dir192_18546}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, webdriver.remote.sessionid=ef56d938-15e0-4890-b319-fd32433066fa, version=46.0.2490.86, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, hasTouchScreen=false, applicationCacheEnabled=false, takesScreenshot=true}]]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.WebDriverException: Error communicating with the remote browser. It may have died.
 Build info: version: '2.48.2', revision: '41bccdd', time: '2015-10-09 19:59:12'
-System info: host: 'D1ML14617', ip: '192.168.8.102', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_45'
+System info: host: 'D1ML14617', ip: '192.168.8.101', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_45'
 Driver info: driver.version: EventFiringWebDriver
-Command duration or timeout: 2.78 seconds
+Command duration or timeout: 5.23 seconds
 Build info: version: '2.48.2', revision: '41bccdd10cf2c0560f637404c2d96164b67d9d67', time: '2015-10-09 13:08:06'
-System info: host: 'D1ML14605', ip: '192.168.8.101', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_45'
-Session ID: b4a613cc-6b2b-4ac4-ad82-07e5b70c80ef
+System info: host: 'D1ML14605', ip: '192.168.8.100', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_45'
+Session ID: ef56d938-15e0-4890-b319-fd32433066fa
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\m1022828\AppData\Local\Temp\scoped_dir4320_3234}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, webdriver.remote.sessionid=b4a613cc-6b2b-4ac4-ad82-07e5b70c80ef, version=46.0.2490.86, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, hasTouchScreen=false, applicationCacheEnabled=false, takesScreenshot=true}]
+Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\m1022828\AppData\Local\Temp\scoped_dir192_18546}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, webdriver.remote.sessionid=ef56d938-15e0-4890-b319-fd32433066fa, version=46.0.2490.86, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, hasTouchScreen=false, applicationCacheEnabled=false, takesScreenshot=true}]
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -410,7 +142,7 @@ Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, brows
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:647)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:670)
 	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:516)
-	at com.pstc.project.tests.TrialClass.testExecution(TrialClass.java:98)
+	at com.pstc.project.tests.TrialClass.testExecution(TrialClass.java:99)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -428,33 +160,236 @@ Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, brows
 	at java.lang.Thread.run(Thread.java:744)
 Caused by: org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
 Build info: version: '2.48.2', revision: '41bccdd', time: '2015-10-09 19:59:12'
-System info: host: 'D1ML14617', ip: '192.168.8.102', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_45'
+System info: host: 'D1ML14617', ip: '192.168.8.101', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_45'
 Driver info: driver.version: EventFiringWebDriver
 Build info: version: '2.48.2', revision: '41bccdd10cf2c0560f637404c2d96164b67d9d67', time: '2015-10-09 13:08:06'
-System info: host: 'D1ML14605', ip: '192.168.8.101', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_45'
+System info: host: 'D1ML14605', ip: '192.168.8.100', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_45'
 Driver info: driver.version: unknown
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
             <line>
-              <![CDATA[Wed Nov 25 11:52:56 IST 2015]]>
+              <![CDATA[Wed Nov 25 12:25:35 IST 2015]]>
             </line>
             <line>
-              <![CDATA[<br> <B>LoginSurveyMonkey_2] --- FAILED<br> Failed to click on : 'Sign In button on Survey monkey home page' on : 'SurveyMonkeyHomePage'  kindly refer attached screenshot for more clearification 
-
- Stacke Trace::
-<B>]]>
+              <![CDATA[<br> <B>LoginSurveyMonkey_2 --- FAILED<br> Element Survey monkey home page Title was not loaded in specified timeout of 15 seconds kindly refer attached screenshot for more clearification<B>]]>
             </line>
             <line>
-              <![CDATA[<br> <a href="D:\ExecutionLog\2015_11_25_11_52\FlowID - LoginSurveyMonkey_2.png"><img src="D:\ExecutionLog\2015_11_25_11_52\FlowID - LoginSurveyMonkey_2.png" alt="ScreenShot Not Available" height="400" width="400"> </a>]]>
+              <![CDATA[<br> <a href="D:\ExecutionLog\2015_11_25_12_25\FlowID - LoginSurveyMonkey_2.png"><img src="D:\ExecutionLog\2015_11_25_12_25\FlowID - LoginSurveyMonkey_2.png" alt="ScreenShot Not Available" height="400" width="400"> </a>]]>
             </line>
             <line>
-              <![CDATA[<br> <B> Execution End Time : 2015-11-25 11:57:47.921<B>]]>
+              <![CDATA[<br> <B> Execution End Time : 2015-11-25 12:26:56.047<B>]]>
             </line>
           </reporter-output>
         </test-method> <!-- testExecution -->
-        <test-method status="PASS" signature="AfterSuite()[pri:0, instance:com.pstc.project.tests.TrialClass@1e26fc47]" name="AfterSuite" is-config="true" duration-ms="0" started-at="2015-11-25T11:57:51Z" finished-at="2015-11-25T11:57:51Z">
+        <test-method status="FAIL" signature="testExecution(com.pstc.project.models.data.TestMap)[pri:0, instance:com.pstc.project.tests.TrialClass@6f8daedc]" name="testExecution" duration-ms="109017" started-at="2015-11-25T12:25:14Z" data-provider="SurveyMonkey_DP" finished-at="2015-11-25T12:27:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.pstc.project.models.data.TestMap@11c39c2e]]>
+              </value>
+            </param>
+          </params>
+          <exception class="com.pstc.framework.exception.ElementNotLoadedInSpecifiedTimeException">
+            <message>
+              <![CDATA[Element Survey monkey home page Title was not loaded in specified timeout of 15 seconds kindly refer attached screenshot for more clearification]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.pstc.framework.exception.ElementNotLoadedInSpecifiedTimeException: Element Survey monkey home page Title was not loaded in specified timeout of 15 seconds kindly refer attached screenshot for more clearification
+	at com.pstc.framework.utilities.Page.waitForPageElement(Page.java:131)
+	at com.pstc.project.models.page.SurveyMonkeyHomePage.waitForHomePageToLoad(SurveyMonkeyHomePage.java:30)
+	at com.pstc.project.models.page.SurveyMonkeyHomePage.getHomePageInstance(SurveyMonkeyHomePage.java:24)
+	at com.pstc.project.tests.TrialClass.testExecution(TrialClass.java:61)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:73)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:744)
+Caused by: org.openqa.selenium.TimeoutException: Timed out after 15 seconds waiting for com.pstc.framework.utilities.WebDriverWrapper$2@7f71ac12
+Build info: version: '2.48.2', revision: '41bccdd10cf2c0560f637404c2d96164b67d9d67', time: '2015-10-09 13:08:06'
+System info: host: 'D1ML14605', ip: '192.168.8.100', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_45'
+Session ID: e459cb1d-dd30-4dc9-b5d9-fa2d0af1b45d
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\m1022828\AppData\Local\Temp\scoped_dir7204_15619}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, webdriver.remote.sessionid=e459cb1d-dd30-4dc9-b5d9-fa2d0af1b45d, version=46.0.2490.86, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, hasTouchScreen=false, applicationCacheEnabled=false, takesScreenshot=true}]
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:261)
+	at com.pstc.framework.utilities.WebDriverWrapper.waitForElementToBeDisplayed(WebDriverWrapper.java:135)
+	at com.pstc.framework.utilities.Page.waitForPageElement(Page.java:123)
+	... 18 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.pstc.framework.exception.ElementNotLoadedInSpecifiedTimeException -->
+          <reporter-output>
+            <line>
+              <![CDATA[Wed Nov 25 12:25:34 IST 2015]]>
+            </line>
+            <line>
+              <![CDATA[<br> <B>LoginSurveyMonkey_1 --- FAILED<br> Element Survey monkey home page Title was not loaded in specified timeout of 15 seconds kindly refer attached screenshot for more clearification<B>]]>
+            </line>
+            <line>
+              <![CDATA[<br> <a href="D:\ExecutionLog\2015_11_25_12_25\FlowID - LoginSurveyMonkey_1.png"><img src="D:\ExecutionLog\2015_11_25_12_25\FlowID - LoginSurveyMonkey_1.png" alt="ScreenShot Not Available" height="400" width="400"> </a>]]>
+            </line>
+            <line>
+              <![CDATA[<br> <B> Execution End Time : 2015-11-25 12:27:01.953<B>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testExecution -->
+        <test-method status="FAIL" signature="testExecution(com.pstc.project.models.data.TestMap)[pri:0, instance:com.pstc.project.tests.TrialClass@6f8daedc]" name="testExecution" duration-ms="109736" started-at="2015-11-25T12:25:14Z" data-provider="SurveyMonkey_DP" finished-at="2015-11-25T12:27:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.pstc.project.models.data.TestMap@180d1176]]>
+              </value>
+            </param>
+          </params>
+          <exception class="com.pstc.framework.exception.ElementNotLoadedInSpecifiedTimeException">
+            <message>
+              <![CDATA[Element Survey monkey home page Title was not loaded in specified timeout of 15 seconds kindly refer attached screenshot for more clearification]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.pstc.framework.exception.ElementNotLoadedInSpecifiedTimeException: Element Survey monkey home page Title was not loaded in specified timeout of 15 seconds kindly refer attached screenshot for more clearification
+	at com.pstc.framework.utilities.Page.waitForPageElement(Page.java:131)
+	at com.pstc.project.models.page.SurveyMonkeyHomePage.waitForHomePageToLoad(SurveyMonkeyHomePage.java:30)
+	at com.pstc.project.models.page.SurveyMonkeyHomePage.getHomePageInstance(SurveyMonkeyHomePage.java:24)
+	at com.pstc.project.tests.TrialClass.testExecution(TrialClass.java:61)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:73)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:744)
+Caused by: org.openqa.selenium.TimeoutException: Timed out after 15 seconds waiting for com.pstc.framework.utilities.WebDriverWrapper$2@6a7819f5
+Build info: version: '2.48.2', revision: '41bccdd10cf2c0560f637404c2d96164b67d9d67', time: '2015-10-09 13:08:06'
+System info: host: 'D1ML14605', ip: '192.168.8.100', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_45'
+Session ID: 9e512bde-d94f-45d9-895c-7a19292855a0
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\m1022828\AppData\Local\Temp\scoped_dir6464_25399}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, webdriver.remote.sessionid=9e512bde-d94f-45d9-895c-7a19292855a0, version=46.0.2490.86, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, hasTouchScreen=false, applicationCacheEnabled=false, takesScreenshot=true}]
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:261)
+	at com.pstc.framework.utilities.WebDriverWrapper.waitForElementToBeDisplayed(WebDriverWrapper.java:135)
+	at com.pstc.framework.utilities.Page.waitForPageElement(Page.java:123)
+	... 18 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.pstc.framework.exception.ElementNotLoadedInSpecifiedTimeException -->
+          <reporter-output>
+            <line>
+              <![CDATA[Wed Nov 25 12:25:34 IST 2015]]>
+            </line>
+            <line>
+              <![CDATA[<br> <B>LoginSurveyMonkey_3 --- FAILED<br> Element Survey monkey home page Title was not loaded in specified timeout of 15 seconds kindly refer attached screenshot for more clearification<B>]]>
+            </line>
+            <line>
+              <![CDATA[<br> <a href="D:\ExecutionLog\2015_11_25_12_25\FlowID - LoginSurveyMonkey_3.png"><img src="D:\ExecutionLog\2015_11_25_12_25\FlowID - LoginSurveyMonkey_3.png" alt="ScreenShot Not Available" height="400" width="400"> </a>]]>
+            </line>
+            <line>
+              <![CDATA[<br> <B> Execution End Time : 2015-11-25 12:27:02.969<B>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testExecution -->
+        <test-method status="FAIL" signature="testExecution(com.pstc.project.models.data.TestMap)[pri:0, instance:com.pstc.project.tests.TrialClass@6f8daedc]" name="testExecution" duration-ms="105985" started-at="2015-11-25T12:25:14Z" data-provider="SurveyMonkey_DP" finished-at="2015-11-25T12:27:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.pstc.project.models.data.TestMap@1f56650]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[Error communicating with the remote browser. It may have died.
+Build info: version: '2.48.2', revision: '41bccdd', time: '2015-10-09 19:59:12'
+System info: host: 'D1ML14617', ip: '192.168.8.101', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_45'
+Driver info: driver.version: EventFiringWebDriver
+Command duration or timeout: 4.78 seconds
+Build info: version: '2.48.2', revision: '41bccdd10cf2c0560f637404c2d96164b67d9d67', time: '2015-10-09 13:08:06'
+System info: host: 'D1ML14605', ip: '192.168.8.100', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_45'
+Session ID: df786965-9a0d-4964-954d-5368e06a1570
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\m1022828\AppData\Local\Temp\scoped_dir7184_21399}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, webdriver.remote.sessionid=df786965-9a0d-4964-954d-5368e06a1570, version=46.0.2490.86, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, hasTouchScreen=false, applicationCacheEnabled=false, takesScreenshot=true}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: Error communicating with the remote browser. It may have died.
+Build info: version: '2.48.2', revision: '41bccdd', time: '2015-10-09 19:59:12'
+System info: host: 'D1ML14617', ip: '192.168.8.101', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_45'
+Driver info: driver.version: EventFiringWebDriver
+Command duration or timeout: 4.78 seconds
+Build info: version: '2.48.2', revision: '41bccdd10cf2c0560f637404c2d96164b67d9d67', time: '2015-10-09 13:08:06'
+System info: host: 'D1ML14605', ip: '192.168.8.100', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_45'
+Session ID: df786965-9a0d-4964-954d-5368e06a1570
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{platform=WIN8, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\m1022828\AppData\Local\Temp\scoped_dir7184_21399}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, webdriver.remote.sessionid=df786965-9a0d-4964-954d-5368e06a1570, version=46.0.2490.86, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, hasTouchScreen=false, applicationCacheEnabled=false, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:647)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:670)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:516)
+	at com.pstc.project.tests.TrialClass.testExecution(TrialClass.java:99)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:73)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:744)
+Caused by: org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '2.48.2', revision: '41bccdd', time: '2015-10-09 19:59:12'
+System info: host: 'D1ML14617', ip: '192.168.8.101', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_45'
+Driver info: driver.version: EventFiringWebDriver
+Build info: version: '2.48.2', revision: '41bccdd10cf2c0560f637404c2d96164b67d9d67', time: '2015-10-09 13:08:06'
+System info: host: 'D1ML14605', ip: '192.168.8.100', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_45'
+Driver info: driver.version: unknown
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+            <line>
+              <![CDATA[Wed Nov 25 12:25:33 IST 2015]]>
+            </line>
+            <line>
+              <![CDATA[<br> <B>LoginSurveyMonkey_4 --- FAILED<br> Element Survey monkey home page Title was not loaded in specified timeout of 15 seconds kindly refer attached screenshot for more clearification<B>]]>
+            </line>
+            <line>
+              <![CDATA[<br> <a href="D:\ExecutionLog\2015_11_25_12_25\FlowID - LoginSurveyMonkey_4.png"><img src="D:\ExecutionLog\2015_11_25_12_25\FlowID - LoginSurveyMonkey_4.png" alt="ScreenShot Not Available" height="400" width="400"> </a>]]>
+            </line>
+            <line>
+              <![CDATA[<br> <B> Execution End Time : 2015-11-25 12:26:56.047<B>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testExecution -->
+        <test-method status="PASS" signature="AfterSuite()[pri:0, instance:com.pstc.project.tests.TrialClass@6f8daedc]" name="AfterSuite" is-config="true" duration-ms="0" started-at="2015-11-25T12:27:04Z" finished-at="2015-11-25T12:27:04Z">
           <reporter-output>
             <line>
               <![CDATA[After Suite Execution Finish]]>

@@ -20,7 +20,7 @@
           <include name="BeforeSuite"/>
           <include name="AfterSuite"/>
           <include name="TrialClass1"/>
-          <include name="testExecution" invocation-numbers="1 0 2 3"/>
+          <include name="testExecution" invocation-numbers="3 1 0 2"/>
         </methods>
       </class> <!-- com.pstc.project.tests.TrialClass -->
     </classes>

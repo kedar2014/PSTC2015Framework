@@ -22,7 +22,6 @@ import com.pstc.project.models.page.SurveyMonkeyLoginPage;
 public class TrialClass extends FrameworkSetupSuiteLevel {
 	FrameworkServices frameworkServices = null;
 	EnvironmentParameter env = new EnvironmentParameter();
-	WebDriver driver = null;
 	ConfigurationProperties configurationProperties = null;
 	Logger logger = Logger.getLogger(TrialClass.class);
 
@@ -45,7 +44,9 @@ public class TrialClass extends FrameworkSetupSuiteLevel {
 	@Test(testName = "LoginSurveyMonkey", groups = { "Regression",
 			"LoginSurveyMonkey" }, dataProvider = "SurveyMonkey_DP")
 	public void testExecution(TestMap testMap) throws Throwable {
+		WebDriver driver=null;
 		try {
+			
 			driver = frameworkServices.getWebDriverInstance(env);
 			Method currentMethod = Reporter.getCurrentTestResult().getMethod()
 					.getConstructorOrMethod().getMethod();

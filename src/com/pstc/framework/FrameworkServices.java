@@ -265,7 +265,7 @@ public class FrameworkServices {
 			if (throwable != null) {
 				String fileName = "";
 				WebDriverWrapper webDriverWrapper = new WebDriverWrapper(driver);
-				frameworkService.logMessage("<br> <B>" + id + "] --- FAILED"
+				frameworkService.logMessage("<br> <B>" + id + " --- FAILED"
 						+ "<br> " + throwable.getMessage() + "<B>", logger);
 				try {
 					fileName = webDriverWrapper.captureScreenShot(new File(
