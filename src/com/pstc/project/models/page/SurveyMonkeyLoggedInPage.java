@@ -12,15 +12,15 @@ public class SurveyMonkeyLoggedInPage extends Page {
 	static Logger logger = Logger.getLogger(SurveyMonkeyLoggedInPage.class
 			.getName());
 
-	public SurveyMonkeyLoggedInPage(WebDriver driver) {
-		super(driver, SurveyMonkeyLoggedInPage.class.getSimpleName(), logger);
+	public SurveyMonkeyLoggedInPage(WebDriver driver,String scenarioID) {
+		super(driver, SurveyMonkeyLoggedInPage.class.getSimpleName(), logger,scenarioID);
 
 	}
 
-	public static SurveyMonkeyLoggedInPage getLoggedInPageInstance(WebDriver driver)
+	public static SurveyMonkeyLoggedInPage getLoggedInPageInstance(WebDriver driver,String scenarioID)
 			throws Throwable {
 		SurveyMonkeyLoggedInPage surveyMonkeyLoggedInPage = new SurveyMonkeyLoggedInPage(
-				driver);
+				driver,scenarioID);
 		surveyMonkeyLoggedInPage.waitForLoggedInPageToLoad();
 		return surveyMonkeyLoggedInPage;
 

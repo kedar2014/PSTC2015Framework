@@ -25,39 +25,7 @@ public class FrameworkSetupSuiteLevel {
 
 	static Logger logger = Logger.getLogger(FrameworkSetupSuiteLevel.class
 			.getName());
-	// public static Reporter LOGGER1;
-
-	/*public ThreadLocal<String> threadedParentMethod = new ThreadLocal<>();
-	public ThreadLocal<HashMap<String, String>> threadedPassDataChildToParent = new ThreadLocal<>();
-	public ThreadLocal<WebDriver> driver = new ThreadLocal<>();
-	public ThreadLocal<DesiredCapabilities> Threadedcapabilities = new ThreadLocal<>();*/
-
-	/*public void setParentMethod(String parentMethod) {
-		this.threadedParentMethod.set(parentMethod);
-	}
-
-	public String parentMethod() {
-		return threadedParentMethod.get();
-	}
-
-	public void setPassDataChildToParent(
-			HashMap<String, String> passDataChildToParent) {
-		this.threadedPassDataChildToParent.set(passDataChildToParent);
-	}
-
-	public HashMap<String, String> passDataChildToParent() {
-		return threadedPassDataChildToParent.get();
-	}
-
-	public void setDriver(WebDriver driver) {
-		this.driver.set(driver);
-	}
-
-	public WebDriver driver() {
-		return driver.get();
-	}
-*/
-	@BeforeSuite(alwaysRun = true, groups = { "Setup" })
+		@BeforeSuite(alwaysRun = true, groups = { "Setup" })
 	public void BeforeSuite() throws Throwable {
 
 		FrameworkServices frameworkServices = new FrameworkServices();

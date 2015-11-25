@@ -18,8 +18,8 @@ public class CalendarComponent extends Page {
 
 	static Logger logger = Logger.getLogger(CalendarComponent.class);
 
-	public CalendarComponent(WebDriver driver) {
-		super(driver, CalendarComponent.class.getSimpleName(), logger);
+	public CalendarComponent(WebDriver driver, String scenarioID) {
+		super(driver, CalendarComponent.class.getSimpleName(), logger,scenarioID);
 	}
 
 	public static CalendarComponent getInstance(WebDriver driver) {

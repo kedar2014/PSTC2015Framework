@@ -51,21 +51,22 @@ public class TrialClass extends FrameworkSetupSuiteLevel{
 		driver.get(ConfigurationProperties.APPLICATION_URL);
 
 		SurveyMonkeyHomePage surveyMonkeyHomePage = SurveyMonkeyHomePage
-				.getHomePageInstance(driver);
+				.getHomePageInstance(driver,scriptID);
 		surveyMonkeyHomePage.signInToSurveyMonkey();
 
 		SurveyMonkeyLoginPage surveyMonkeyLoginPage = SurveyMonkeyLoginPage
-				.getLoginPageInstance(driver,testMap);
+				.getLoginPageInstance(driver,testMap,scriptID);
 		assertClass.verifyValues("1", true,
 				surveyMonkeyLoginPage.verifySurveyMonkeyLoginPageTitleExists(),
 				"Verify Login Page title exists");
 		surveyMonkeyLoginPage.loginToSurveyMonkey();
 
 		SurveyMonkeyLoggedInPage surveyMonkeyLoggedInPage = SurveyMonkeyLoggedInPage
-				.getLoggedInPageInstance(driver);
+				.getLoggedInPageInstance(driver,scriptID);
 		assertClass.verifyValues("2", true, surveyMonkeyLoggedInPage
 				.verifySurveyMonkeyLoggedInPageUserNameExists(),
 				"Verify Username exists");
+		FrameworkServices.videoServiceStop(driver);
 	}
 
 }

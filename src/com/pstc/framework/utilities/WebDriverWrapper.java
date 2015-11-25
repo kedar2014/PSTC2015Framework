@@ -32,7 +32,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import com.google.common.base.Predicate;
 import com.pstc.framework.FrameworkServices;
 
-
 public class WebDriverWrapper {
 	static Logger logger = Logger.getLogger(WebDriverWrapper.class.getName());
 	WebDriver driver;
@@ -44,7 +43,8 @@ public class WebDriverWrapper {
 
 	public static String getUniqueValue() {
 		// get current date time with Date() to create unique file name
-		char[] chars = "abcdefghijklmnopqrstuvwxyzABSDEFGHIJKLMNOPQRSTUVWXYZ1234567890".toCharArray();
+		char[] chars = "abcdefghijklmnopqrstuvwxyzABSDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+				.toCharArray();
 		Random r = new Random(System.currentTimeMillis());
 		char[] id = new char[9];
 		for (int i = 0; i < 9; i++) {
@@ -59,21 +59,25 @@ public class WebDriverWrapper {
 
 	}
 
-	public String captureScreenShot(File destinationFilePathLocation, String snapShotName) throws IOException {
+	public String captureScreenShot(File destinationFilePathLocation,
+			String snapShotName) throws IOException {
 		String fileName = new String();
 		FrameworkServices frameworkServices = new FrameworkServices();
 		if (isAlertPresentForScreenshot()) {
 			String message = dismissAlert(2);
-			frameworkServices.logMessage("<B> Found alert with mesage: " + message + "</B>", logger);
+			frameworkServices.logMessage("<B> Found alert with mesage: "
+					+ message + "</B>", logger);
 		}
 
 		WebDriver augmentedDriver = driver;
 		if (!(driver instanceof InternetExplorerDriver))
 			augmentedDriver = new Augmenter().augment(driver);
 
-		File screenshot = ((TakesScreenshot) augmentedDriver).getScreenshotAs(OutputType.FILE);
+		File screenshot = ((TakesScreenshot) augmentedDriver)
+				.getScreenshotAs(OutputType.FILE);
 		fileName = snapShotName + ".png";
-		File destinationFilePath = new File((destinationFilePathLocation + File.separator + fileName));
+		File destinationFilePath = new File((destinationFilePathLocation
+				+ File.separator + fileName));
 		FileUtils.copyFile(screenshot, destinationFilePath);
 		return fileName;
 
@@ -98,7 +102,8 @@ public class WebDriverWrapper {
 
 	}
 
-	public WebElement waitForElementToBeDisplayed(final WebElement element, int timeOutPeriod) {
+	public WebElement waitForElementToBeDisplayed(final WebElement element,
+			int timeOutPeriod) {
 		WebDriverWait webDriverWait = new WebDriverWait(driver, timeOutPeriod);
 		webDriverWait.pollingEvery(10, TimeUnit.MICROSECONDS);
 
@@ -177,7 +182,8 @@ public class WebDriverWrapper {
 
 	}
 
-	public WebElement waitForElementToBeClickable(final WebElement element, int timeOutPeriod) {
+	public WebElement waitForElementToBeClickable(final WebElement element,
+			int timeOutPeriod) {
 
 		WebDriverWait webDriverWait = new WebDriverWait(driver, timeOutPeriod);
 		webDriverWait.pollingEvery(10, TimeUnit.MICROSECONDS);
@@ -204,7 +210,8 @@ public class WebDriverWrapper {
 
 	}
 
-	public WebElement waitForElementToBeEnabled(final WebElement element, int timeOutPeriod) {
+	public WebElement waitForElementToBeEnabled(final WebElement element,
+			int timeOutPeriod) {
 
 		WebDriverWait webDriverWait = new WebDriverWait(driver, timeOutPeriod);
 		webDriverWait.pollingEvery(10, TimeUnit.MICROSECONDS);
@@ -256,7 +263,8 @@ public class WebDriverWrapper {
 
 	}
 
-	public WebElement waitForOptionToBePopulatedInList(final WebElement dropdownList, int timeOutPeriod) {
+	public WebElement waitForOptionToBePopulatedInList(
+			final WebElement dropdownList, int timeOutPeriod) {
 
 		WebDriverWait webDriverWait = new WebDriverWait(driver, timeOutPeriod);
 		webDriverWait.pollingEvery(10, TimeUnit.MICROSECONDS);
@@ -264,7 +272,8 @@ public class WebDriverWrapper {
 
 			public WebElement apply(WebDriver driver) {
 				try {
-					List<WebElement> options = dropdownList.findElements(By.tagName("option"));
+					List<WebElement> options = dropdownList.findElements(By
+							.tagName("option"));
 					if (options.size() >= 1) {
 						return dropdownList;
 					} else
@@ -283,7 +292,8 @@ public class WebDriverWrapper {
 
 	}
 
-	public WebElement waitForTextToAppearInTextField(final WebElement webElement, int timeOutPeriod) {
+	public WebElement waitForTextToAppearInTextField(
+			final WebElement webElement, int timeOutPeriod) {
 
 		WebDriverWait webDriverWait = new WebDriverWait(driver, timeOutPeriod);
 		webDriverWait.pollingEvery(10, TimeUnit.MICROSECONDS);
@@ -310,11 +320,13 @@ public class WebDriverWrapper {
 
 	}
 
-	public boolean waitForOptionToBePresentInList(final By by, String value, int timeOutPeriod) {
+	public boolean waitForOptionToBePresentInList(final By by, String value,
+			int timeOutPeriod) {
 
 		WebDriverWait webDriverWait = new WebDriverWait(driver, timeOutPeriod);
 		webDriverWait.pollingEvery(10, TimeUnit.MICROSECONDS);
-		return webDriverWait.until(ExpectedConditions.textToBePresentInElement(by, value));
+		return webDriverWait.until(ExpectedConditions.textToBePresentInElement(
+				by, value));
 	}
 
 	public void waitForElementToDisapper(final By by, int timeOutPeriod) {
@@ -338,11 +350,13 @@ public class WebDriverWrapper {
 	}
 
 	public void bringElementInView(WebElement element) {
-		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
+		((JavascriptExecutor) driver).executeScript(
+				"arguments[0].scrollIntoView(true);", element);
 
 	}
 
-	public void waitForElementToDisapper(final WebElement element, int timeOutPeriod) {
+	public void waitForElementToDisapper(final WebElement element,
+			int timeOutPeriod) {
 
 		FluentWait<WebElement> fluentWait = new FluentWait<WebElement>(element);
 		fluentWait.pollingEvery(10, TimeUnit.MICROSECONDS);
@@ -362,14 +376,20 @@ public class WebDriverWrapper {
 
 	public void waitForAlert(int timeOutPeriod) {
 		WebDriverWait webDriverWait = new WebDriverWait(driver, timeOutPeriod);
-		webDriverWait.ignoring(NoSuchElementException.class, StaleElementReferenceException.class)
-				.pollingEvery(10, TimeUnit.MILLISECONDS).until(ExpectedConditions.alertIsPresent());
+		webDriverWait
+				.ignoring(NoSuchElementException.class,
+						StaleElementReferenceException.class)
+				.pollingEvery(10, TimeUnit.MILLISECONDS)
+				.until(ExpectedConditions.alertIsPresent());
 	}
 
 	public void waitForAlert(int timeOutPeriod, int pollingTime) {
 		WebDriverWait webDriverWait = new WebDriverWait(driver, timeOutPeriod);
-		webDriverWait.ignoring(NoSuchElementException.class, StaleElementReferenceException.class)
-				.pollingEvery(pollingTime, TimeUnit.MILLISECONDS).until(ExpectedConditions.alertIsPresent());
+		webDriverWait
+				.ignoring(NoSuchElementException.class,
+						StaleElementReferenceException.class)
+				.pollingEvery(pollingTime, TimeUnit.MILLISECONDS)
+				.until(ExpectedConditions.alertIsPresent());
 	}
 
 	public String getAlertMessage(int timeOutPeriod) {
@@ -430,7 +450,8 @@ public class WebDriverWrapper {
 			waitForAlert(5);
 			FrameworkServices frameworkServices = new FrameworkServices();
 			alertMessage = driver.switchTo().alert().getText();
-			frameworkServices.logMessage("fetched text: " + alertMessage + " from alert box.", logger);
+			frameworkServices.logMessage("fetched text: " + alertMessage
+					+ " from alert box.", logger);
 		} catch (Exception e) {
 
 		}
@@ -464,7 +485,8 @@ public class WebDriverWrapper {
 		boolean isAlertPresent = false;
 		try {
 			// waitForAlert(3);
-			isAlertPresent = driver.switchTo().alert().getText().contains(errorMessage);
+			isAlertPresent = driver.switchTo().alert().getText()
+					.contains(errorMessage);
 		} catch (Exception e) {
 
 		}

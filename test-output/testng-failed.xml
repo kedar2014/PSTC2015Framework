@@ -24,7 +24,7 @@
       <class name="com.pstc.project.tests.TrialClass">
         <methods>
           <include name="TrialClass1"/>
-          <include name="testExecution" invocation-numbers="3 0 2 1"/>
+          <include name="testExecution" invocation-numbers="1 2 3 0"/>
         </methods>
       </class> <!-- com.pstc.project.tests.TrialClass -->
     </classes>

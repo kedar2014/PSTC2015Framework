@@ -29,24 +29,16 @@ public abstract class Page {
 	protected String pageName;
 	protected Logger logger;
 	protected String masterEntityPassword = "auto01";
+	protected String scenarioID;
 
-	/*
-	 * protected String masterEntityPassword;
-	 * 
-	 * public String getMasterEntityPassword() { return masterEntityPassword; }
-	 * 
-	 * public void setMasterEntityPassword(String masterEntityPassword) {
-	 * this.masterEntityPassword = masterEntityPassword; }
-	 */
-
-	public Page(WebDriver driver, String pageName, Logger logger) {
+	public Page(WebDriver driver, String pageName, Logger logger, String scenarioID) {
 
 		this.driver = driver;
 		this.pageName = pageName;
 		webDriverWrapper = new WebDriverWrapper(driver);
 		frameworkServices = new FrameworkServices();
 		this.logger = logger;
-		// waitForLoaderInvisibility();
+		this.scenarioID=scenarioID;
 	}
 
 	public Page() {
@@ -221,7 +213,6 @@ public abstract class Page {
 			WebElement element;
 
 			for (int i = 1; i <= 5; i++) {
-				bringElementInViewByDrag(getWebElement(pageElement));
 				if (!isWebElementAvailableInPageElement(pageElement))
 					element = getWebElement(pageElement);
 				else
@@ -250,17 +241,7 @@ public abstract class Page {
 
 	protected void waitForLoaderInvisibility() {
 		try {
-			/*
-			 * //ORIGINAL CODE WebDriverWait webDriverWait=new
-			 * WebDriverWait(driver, 300);
-			 * webDriverWait.until(ExpectedConditions.
-			 * invisibilityOfElementLocated(By.xpath(
-			 * "//div[contains(@class,'ajaxbg')]")));
-			 */
 
-			/*
-			 * //EDITED CODE by NBS to allow wait for 3 attempts
-			 */
 			WebDriverWait webDriverWait = new WebDriverWait(driver, 300);
 			WebElement element = driver.findElement(By
 					.xpath("//div[contains(@class,'ajaxbg')]"));
@@ -272,8 +253,8 @@ public abstract class Page {
 					break;
 			}
 		} catch (Exception exception) {
-			// throw new UnsuccessfulServiceException("Could not handle loader
-			// properly :", exception);
+			throw new UnsuccessfulServiceException(
+					"Could not handle loader properly :", exception);
 		}
 	}
 
@@ -289,7 +270,6 @@ public abstract class Page {
 				element = pageElement.getWebElement();
 
 			for (int i = 1; i <= 5; i++) {
-				bringElementInViewByDrag(element);
 				Thread.sleep(2000);
 				if (isElementDisplayed(pageElement)) {
 					break;
@@ -308,6 +288,7 @@ public abstract class Page {
 			frameworkServices.logMessage(
 					"Clicked on: " + pageElement.getName(), logger);
 		} catch (Exception exception) {
+			frameworkServices.takeScreenshot(scenarioID,driver, exception, logger);
 			throw new UnsuccessfulServiceException("Failed to click on : '"
 					+ pageElement.getName() + "' on : '" + pageName + "' ",
 					exception);
@@ -539,7 +520,6 @@ public abstract class Page {
 
 	protected void doubleClick(PageElement pageElement) {
 		try {
-			bringElementInViewByDrag(getWebElement(pageElement));
 			WebElement webElement;
 			if (!isWebElementAvailableInPageElement(pageElement))
 				webElement = getWebElement(pageElement);
@@ -561,7 +541,6 @@ public abstract class Page {
 	protected String getText(PageElement pageElement) {
 		String text = new String();
 		try {
-			bringElementInViewByDrag(getWebElement(pageElement));
 			WebElement webElement;
 			if (!isWebElementAvailableInPageElement(pageElement))
 				webElement = getWebElement(pageElement);
@@ -585,7 +564,6 @@ public abstract class Page {
 	protected String getAttribute(PageElement pageElement, String attributeName) {
 		String atributeValue = new String("");
 		try {
-			bringElementInViewByDrag(getWebElement(pageElement));
 			WebElement webElement;
 			if (!isWebElementAvailableInPageElement(pageElement))
 				webElement = getWebElement(pageElement);
@@ -644,73 +622,6 @@ public abstract class Page {
 
 	}
 
-	/*
-	 * public static boolean isHelperConfigTrue(Object pageObject, String
-	 * iteration) { DataBin bin = (DataBin) pageObject; return
-	 * bin.getIterationNo().equals(iteration) &&
-	 * !bin.getDataType().toLowerCase().contains("verify") &&
-	 * bin.getExecuteFlag().toLowerCase().contains("yes");
-	 * 
-	 * }
-	 */
-
-	/*
-	 * public static boolean isHelperConfigTrue(Object pageObject, String
-	 * iteration, String groupName) { DataBin bin = (DataBin) pageObject; if
-	 * (groupName == null || groupName.equals("")) { return
-	 * bin.getIterationNo().equals(iteration) &&
-	 * !bin.getDataType().toLowerCase().contains("verify") &&
-	 * bin.getExecuteFlag().toLowerCase().contains("yes"); } else {
-	 * 
-	 * 
-	 * if(bin.getIterationNo().equals(iteration) &&
-	 * !bin.getDataType().toLowerCase().contains("verify") &&
-	 * bin.getExecuteFlag().toLowerCase().contains("yes")){
-	 * 
-	 * String groupNameOfTestData = bin.getDataType().split(":")[1]
-	 * .toLowerCase(); return
-	 * groupNameOfTestData.equals(groupName.toLowerCase()); }else { return
-	 * false; } String groupNameOfTestData = bin.getDataType().split(":")[1]
-	 * .toLowerCase(); return
-	 * groupNameOfTestData.equals(groupName.toLowerCase()) &&
-	 * bin.getIterationNo().equals(iteration) &&
-	 * !bin.getDataType().toLowerCase().contains("verify") &&
-	 * bin.getExecuteFlag().toLowerCase().contains("yes");
-	 * 
-	 * } }
-	 */
-
-	/*
-	 * public static boolean isVerifyConfigTrue(Object pageObject, String
-	 * iteration, String groupName) { DataBin bin = (DataBin) pageObject; if
-	 * (groupName == null || groupName.equals("")) { return
-	 * bin.getIterationNo().equals(iteration) &&
-	 * bin.getDataType().toLowerCase().contains("verify") &&
-	 * bin.getExecuteFlag().toLowerCase().contains("yes"); } else { String
-	 * groupNameOfTestData = bin.getDataType().split(":")[1] .toLowerCase();
-	 * return groupNameOfTestData.equals(groupName.toLowerCase()) &&
-	 * bin.getIterationNo().equals(iteration) &&
-	 * bin.getDataType().toLowerCase().contains("verify") &&
-	 * bin.getExecuteFlag().toLowerCase().contains("yes");
-	 * 
-	 * } }
-	 */
-	public boolean isActionTrue(String config) {
-		return (config.toLowerCase().equals("add")
-				|| config.toLowerCase().contains("edit:") || config
-				.toLowerCase().contains("verify:"));
-
-	}
-
-	public boolean isDeleteActionTrue(String config) {
-		return (config.toLowerCase().contains("delete:"));
-
-	}
-
-	public boolean isActionAddAndIgnoreSaveTrue(String config) {
-		return (config.toLowerCase().equals("addandignoresave"));
-	}
-
 	protected boolean isElementSelected(PageElement pageElement) {
 
 		boolean isElementDisplayed = false;
@@ -760,7 +671,6 @@ public abstract class Page {
 	protected void selectValueFromList(PageElement pageElement, String value) {
 		try {
 			waitForLoaderInvisibility();
-			bringElementInViewByDrag(getWebElement(pageElement));
 
 			WebElement webElement;
 			if (!isWebElementAvailableInPageElement(pageElement))
@@ -829,7 +739,6 @@ public abstract class Page {
 			WebElement element;
 			date = RandomCodeGenerator.dateGenerator(value, "dd-MMM-yyyy");
 			for (int i = 1; i <= 3; i++) {
-				bringElementInViewByDrag(getWebElement(pageElement));
 				if (!isWebElementAvailableInPageElement(pageElement))
 					element = getWebElement(pageElement);
 				else
@@ -862,20 +771,6 @@ public abstract class Page {
 			pageElement = null;
 		}
 
-		/*
-		 * String date=""; try { waitForLoaderInvisibility(); CalendarComponent
-		 * calendarComponent = new CalendarComponent(driver); for (int i = 0; i
-		 * <= 2; i++) { try { date=RandomCodeGenerator.dateGenerator(value);
-		 * clickAndRetry(pageElement); //click(pageElement); Thread.sleep(3000);
-		 * calendarComponent.waitForCalendarVisiblity();
-		 * calendarComponent.selectDateFromCalendar(date); break; } catch
-		 * (Exception e) { } } frameworkServices.logMessage("Selected date: '" +
-		 * date + "' in " + pageElement.getName(), logger); } catch (Exception
-		 * exception) { throw new UnsuccessfulServiceException(
-		 * "Failed to Select date: '" + date + "' of " + pageElement.getName() +
-		 * " on : '" + pageName + "'", exception); } finally { pageElement =
-		 * null; }
-		 */
 	}
 
 	protected void selectDateFromCalendarWindowAndRetry(
@@ -883,7 +778,7 @@ public abstract class Page {
 		String date = "";
 		try {
 			waitForLoaderInvisibility();
-			CalendarComponent calendarComponent = new CalendarComponent(driver);
+			CalendarComponent calendarComponent = new CalendarComponent(driver,scenarioID);
 			for (int i = 0; i <= 2; i++) {
 				try {
 					date = RandomCodeGenerator.dateGenerator(value);
@@ -912,7 +807,7 @@ public abstract class Page {
 		try {
 			Thread.sleep(3000);
 			waitForLoaderInvisibility();
-			CalendarComponent calendarComponent = new CalendarComponent(driver);
+			CalendarComponent calendarComponent = new CalendarComponent(driver,scenarioID);
 			for (int i = 0; i <= 2; i++) {
 				try {
 					date = RandomCodeGenerator.dateGenerator(value);
@@ -956,7 +851,6 @@ public abstract class Page {
 	protected String getSelectedValueFromList(PageElement pageElement) {
 
 		try {
-			bringElementInViewByDrag(getWebElement(pageElement));
 			WebElement webElement;
 			if (!isWebElementAvailableInPageElement(pageElement))
 				webElement = getWebElement(pageElement);
@@ -1008,7 +902,6 @@ public abstract class Page {
 	protected ArrayList<String> getAllOptionsInList(PageElement pageElement) {
 
 		try {
-			bringElementInViewByDrag(getWebElement(pageElement));
 			WebElement webElement;
 			if (!isWebElementAvailableInPageElement(pageElement))
 				webElement = getWebElement(pageElement);
@@ -1058,227 +951,15 @@ public abstract class Page {
 
 	}
 
-	private PageElement pageLoader() {
-		return new PageElement(By.xpath("//div[contains(@class,'ajaxbg')]"),
-				"Page Loader", false, WaitType.WAITFORELEMENTTOBEDISPLAYED, 2);
-	}
-
-	private PageElement pageScroll() {
-		return new PageElement(
-				By.xpath("//div[contains(@class,'dragger_bar')]"),
-				// By.xpath("//p[contains(text(),'LOB:')]"),
-				// By.xpath("//div[contains(@class,'_draggerContainer')]//div[contains(@class,'_dragger')]"),
-				"Scroll Down", false, WaitType.WAITFORELEMENTTOBEDISPLAYED, 2);
-	}
-
-	private PageElement pageScrollDown() {
-		return new PageElement(
-				By.xpath("//a[contains(@class,'mCSB_buttonDown')]"),
-				// By.xpath("//div[contains(@class,'_draggerContainer')]//div[contains(@class,'_dragger')]"),
-				"Scroll Down", false, WaitType.WAITFORELEMENTTOBEENABLED, 5);
-	}
-
-	private PageElement NEWROW() {
-		return new PageElement(By.className("jq-icon-plus"),
-		// By.xpath("//div[contains(@class,'_draggerContainer')]//div[contains(@class,'_dragger')]"),
-				"Scroll Down", false, WaitType.WAITFORELEMENTTOBEDISPLAYED, 2);
-	}
-
-	private PageElement keyboardShortcutDivTag() {
-		return new PageElement(
-				By.xpath("//div[contains(@class,'keyboardlist')]"),
-				"Scroll Down", false, WaitType.WAITFORELEMENTTOBEDISPLAYED, 2);
-	}
-
-	private PageElement keyboardListLabel() {
-		return new PageElement(
-				By.xpath("//a[contains(label,'Keyboard Shortcut')]"),
-				"Keyboard shortcut Link ", false,
-				WaitType.WAITFORELEMENTTOBEENABLED, 10);
-	}
-
-	public void removeKeyboardShortcutAndClick(PageElement pageElement)
-			throws InterruptedException {
-		for (int j = 0; j <= 5; j++) {
-			bringElementInViewByDrag(getWebElement(pageElement));
-			// String styleValue = getAttribute(keyboardListLabel(),"style");
-			// mouseOver(keyboardListLabel());
-			String styleValue = getAttribute(keyboardShortcutDivTag(), "style");
-			if (styleValue.contains("block")) {
-				Thread.sleep(2000);
-				mouseOver(keyboardListLabel());
-				// styleValue = getAttribute(keyboardListLabel(),"style");
-				styleValue = getAttribute(keyboardShortcutDivTag(), "style");
-				if (styleValue.contains("none") || styleValue.equals("")) {
-					clickWithoutBringInView(pageElement);
-					Thread.sleep(2000);
-					break;
-				} else {
-					// wait.wait();
-					continue;
-				}
-			} else {
-				clickWithoutBringInView(pageElement);
-				break;
-			}
-
-		}
-
-		/*
-		 * try { ((JavascriptExecutor)driver).executeScript(
-		 * "document.getElementsByClassName('keyboardmenu')[0].setAttribute('style', ' ')"
-		 * ); waitForLoaderInvisibility(); WebDriverWait wait=new
-		 * WebDriverWait(driver, 5);
-		 * wait.until(ExpectedConditions.elementToBeClickable(pageElement.getBy(
-		 * ))); for (int i = 0; i <= 2; i++) { try { click(pageElement); break;
-		 * 
-		 * } catch (Exception e) { webDriverWrapper.wait(1); } }
-		 * frameworkServices.logMessage( "Clicked on: " + pageElement.getName(),
-		 * logger); } catch (Exception exception) { throw new
-		 * UnsuccessfulServiceException("Failed to click on : '" +
-		 * pageElement.getName() + "' on : '" + pageName + "' ", exception); }
-		 * finally { pageElement = null; }
-		 */
-	}
-
-	public void clickScrollDownButton(int times) {
-		for (int i = 0; i < times; i++) {
-
-			clickWithoutBringInView(pageScrollDown());
-
-		}
-
-	}
-
-	public void bringElementInViewByDrag(WebElement targetElement) {
-		try {
-			if (isElementDisplayed(pageScroll())) {
-				/*
-				 * Locatable locatableElement=(Locatable) targetElement; int
-				 * x=locatableElement.getCoordinates().onPage().x; int
-				 * y=locatableElement.getCoordinates().onPage().y;
-				 */
-
-				webDriverWrapper.explicitWait(2);
-
-				// while(!targetElement.isDisplayed()){
-				// Selenium selenium = new WebDriverBackedSelenium(driver,"");
-				// FrameworkServices.getWebDriverBackedSeleniumInstance(driver).dragAndDropToObject("xpath="+getWebElement(pageScroll()).toString(),targetElement.toString());
-				// if(!targetElement.isDisplayed())
-
-				Actions dragdrop = new Actions(driver);
-				dragdrop.dragAndDrop(getWebElement(pageScroll()), targetElement)
-						.build().perform();
-
-				// dragdrop.moveToElement(targetElement).build().perform();
-
-				// dragdrop.moveToElement(targetElement).build().perform();
-				// try {
-				webDriverWrapper.explicitWait(2);
-				
-			}
-
-		} catch (Exception exception) {
-			throw new UnsuccessfulServiceException("Failed to bring Element  "
-					+ pageScroll().getName() + "  "
-					+ " in the current browser view " + " on : '" + pageName
-					+ "' ", exception);
-		} finally {
-			// pageScrollDown() = null;
-		}
-
-	}
-
-	/*
-	 * protected void mouseOverByFireEvent(PageElement pageElement) {
-	 * 
-	 * try { WebElement webElement; if
-	 * (!isWebElementAvailableInPageElement(pageElement)) webElement =
-	 * getWebElement(pageElement); else webElement =
-	 * pageElement.getWebElement();
-	 * 
-	 * Selenium selenium = FrameworkServices
-	 * .getWebDriverBackedSeleniumInstance(driver);
-	 * selenium.fireEvent(pageElement.getIdentifierString(), "mousemove");
-	 * 
-	 * frameworkServices.logMessage( "Moved mouse on  " + pageElement.getName()
-	 * + "  " + "  ", logger);
-	 * 
-	 * } catch (Exception exception) { throw new UnsuccessfulServiceException(
-	 * "Failed to mouse move Element  " + pageElement.getName() + "  " + "  " +
-	 * " on : '" + pageName + "' ", exception); } finally { pageElement = null;
-	 * }
-	 * 
-	 * }
-	 */
-
-	protected PageElement autoSuggestLinkByText(String text) {
-		webDriverWrapper.explicitWait(3);
-		return new PageElement(
-				By.xpath("//a[contains(text(),'" + text + "')]"),
-				"Auto Suggest Link for " + text, true,
-				WaitType.WAITFORELEMENTTOBEENABLED, 45);
-	}
-
 	protected PageElement getEarlyLoadedPageElement(PageElement pageElement) {
 		pageElement.setSlowLoadableComponent(false);
 		return pageElement;
-	}
-
-	public void expandPanel(PageElement panel) {
-		webDriverWrapper.explicitWait(2);
-		if (getAttribute(panel, "class").equalsIgnoreCase("plus"))
-			click(panel);
-		webDriverWrapper.explicitWait(3);
-	}
-
-	public void collapsePanel(PageElement panel) {
-		try {
-			webDriverWrapper.explicitWait(2);
-			if (getAttribute(panel, "class").equalsIgnoreCase("minus")
-					|| getAttribute(panel, "class").equalsIgnoreCase(
-							"plus minus"))
-				click(panel);
-			webDriverWrapper.explicitWait(2);
-		} catch (Exception e) {
-		}
-	}
-
-	public void expandSubPanel(PageElement panel) {
-		webDriverWrapper.explicitWait(2);
-		if (getAttribute(panel, "class").equalsIgnoreCase("plus"))
-			click(panel);
-		webDriverWrapper.explicitWait(2);
-	}
-
-	public void collapseSubPanel(PageElement panel) {
-		try {
-			webDriverWrapper.explicitWait(2);
-			if (getAttribute(panel, "class").equalsIgnoreCase("minus")
-					|| getAttribute(panel, "class").equalsIgnoreCase(
-							"plus minus"))
-				click(panel);
-			webDriverWrapper.explicitWait(2);
-		} catch (Exception e) {
-		}
 	}
 
 	public String fetchSelectedValueFromList(PageElement pageElement) {
 		try {
 
 			return getSelectedValueFromList(getEarlyLoadedPageElement(pageElement));
-		} catch (Exception e) {
-			return "";
-
-		}
-
-	}
-
-	public String fetchSelectedValueFromListWithoutBringInView(
-			PageElement pageElement) {
-		try {
-
-			return getSelectedValueFromListWithoutBringInView(getEarlyLoadedPageElement(pageElement));
 		} catch (Exception e) {
 			return "";
 
@@ -1352,21 +1033,6 @@ public abstract class Page {
 	public void closeWindow(String windowTitle) throws Exception, Throwable {
 		switchToWindow(windowTitle);
 		driver.close();
-	}
-
-	public void handleUnexpectedErrorPopups() {
-		ConfigurationProperties configurationProperties = new ConfigurationProperties();
-		String configHandleUnexpectedErrorPopups = configurationProperties
-				.getProperty(ConfigurationProperties.Handle_Unexpected_Error_Popups);
-		if (configHandleUnexpectedErrorPopups.equals("yes")) {
-			while (webDriverWrapper
-					.isAlertWithSpecifiedMessagePresent("Something seems Wrong")
-					|| webDriverWrapper
-							.isAlertWithSpecifiedMessagePresent("Something special seems Wrong")) {
-				acceptAlertAndReturnConfirmationMessage();
-			}
-		}
-
 	}
 
 }
